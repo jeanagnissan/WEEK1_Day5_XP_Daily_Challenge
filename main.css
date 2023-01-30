@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+body{
+    border: 4px solid red;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    background-color: #413e3e;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.cust-anim > p {
+    position: relative;
+    top: 25px;
+    left: 10pxpx;
+}
+
+.bl-color-o:hover
+{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transition: 1s ease-in-out;
+    transform: scale(0.8);
+}
+
+.bl-color-d:hover
+{
+    -webkit-transform: rotateZ(-30deg);
+    -ms-transform: rotateZ(-30deg);
+    transition: 1s ease-in-out;
+    transform: rotateZ(-30deg);
+}
+
+.bl-color-t:hover
+{
+    background-color: #e75353;
+    transition: 1s ease-in-out;
+    border-radius: 20%;
+}
+
+.bl-color-q:hover
+{
+    -webkit-transform: rotateZ(-180deg);
+    -ms-transform: rotateZ(-180deg);
+    transition: 2s ease-in-out;
+    background-color: #c8db72;
+    border-radius: 75%;
+    transform: rotateZ(-180deg);
+}
+
+.bl-color-c:hover
+{
+    -webkit-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transition: 1s ease-in-out;
+    background-color: #69e68f;
+    border-radius: 100%;
+    transform: rotateZ(180deg);
+}
+
+.bl-color-s:hover
+{
+    -webkit-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    transition: 5s ease-in-out;
+    background-color: #eb5008;
+    border-radius: 10%;
+    transform: rotateZ(360deg);
+}
+
+.bl-color-se:hover {
+    position: relative;
+    animation-name: examples;
+    animation-duration: 4s;
+}
+  
+@keyframes examples {
+    0%   {background-color:red; left:0px; top:0px;}
+    100%  {background-color:yellow; top:100px;}
+}
+
+.bl-color-h:hover {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
